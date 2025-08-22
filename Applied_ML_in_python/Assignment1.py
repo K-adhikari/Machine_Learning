@@ -1,4 +1,3 @@
-
 # Load breast cancer data from scikit-learn datasets
 
 import numpy as np
@@ -11,13 +10,11 @@ print(cancer.DESCR) # print data set description
 
 
 
-
 # How many features does the breast cancer dataset have?
 
 cancer.data.shape[1]
 
 # Dataset has 30 features.
-
 
 
 
@@ -29,7 +26,6 @@ cancer_df.head()
 
 
 
-
 # Check the instances of malignant and benign in the dataframe
 
 distribution = cancer_df['target'].value_counts().sort_index()
@@ -38,13 +34,11 @@ print(target)
 
 
 
-
 # Split the dataframe into X (the data) and y(the labels)
 
 X = cancer_df.drop(columns= 'target')
 y = cancer_df['target']
 print(X.shape, y.shape)
-
 
 
 
@@ -57,13 +51,11 @@ print(X_train.shape, X_test.shape, y_train.shape, y_test.shape)
 
 
 
-
 # Using KNeighborsClassifier, fit a k-nearest neighbors (knn) classifier with X_train, y_train and using one nearest neighbor (n_neighbors = 1).
 
 from sklearn.neighbors import KNeighborsClassifier
 
 knn = KNeighborsClassifier(n_neighbors = 1)
-
 
 
 
@@ -76,12 +68,10 @@ print(prediction)
 
 
 
-
 # Find the score (mean accuracy) of your knn classifier using X_test and y_test.
 
 accuracy = knn.score(X_test, y_test)
 print(accuracy)
-
 
 
 
