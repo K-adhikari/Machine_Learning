@@ -6,4 +6,4 @@ First part of Assignment2.ipynb uses a synthetic dataset. The assignment involve
 
 Assignment3.ipynb uses a dataset called fraud_data.csv. The assignment involved training a dummy classifier that classifies everything as the majority class of the training data and calculating accuracy and recall, training a SVC classifier and calculating the confusion matrix, training a logistic regression classifier using decision_function() and creating a precision recall curve and roc_curve, and performing a grid search over the parameters.
 
-Assignment4.ipynb uses two datasets called train.csv and test.csv.
+Assignment4.ipynb uses two datasets called train.csv and test.csv. The assingment involved training a model using train.csv dataset to predict the labels for instances in test.csv dataset. The evaluation metric for this model was supposed to be Area Under the ROC curve (AUC) and the model should have had an AUC of greater than 0.85.
