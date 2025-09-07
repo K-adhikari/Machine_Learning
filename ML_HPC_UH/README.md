@@ -1,1 +1,1 @@
-
+Glioblastoma.ipynb used a scRNA dataset for Glioblastoma. The dataset was used to train five different models: Logistic Regression, KNN, K-means, Decision Tree, and Random Forest Classifier, and test the performace of these models.
